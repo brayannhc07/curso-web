@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered table-hover">
+            <!-- 
+				.table-striped Nos permite alternar colores entre cada fila
+				.table-bordered Nos permite agregar bordes a la tabla
+				.table-hover Nos permite agregar un efecto hover a las filas
+				.table-dark Nos permite cambiar los colores de la tabla a oscuros
+				.table-sm Nos permite hacer la tabla más compacta eliminando los paddings
+				.table-responsive-xx Nos permite adaptar nuestra tabla a dispositivos móviles
+		   -->
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 
+					.table-active
+					.table-success
+					.table-warning
+					.table-danger
+					.table-info
+				 -->
+              <tr class="table-success">
+                <td>Carlos</td>
+                <td>22</td>
+                <td>México</td>
+              </tr>
+              <tr>
+                <td>Alejandro</td>
+                <td>37</td>
+                <td>España</td>
+              </tr>
+              <!-- 
+				  .bg-primary
+				  .bg-success
+				  .bg-warning
+				  .bg-danger
+				  .bg-info
+			   -->
+              <tr class="bg-primary text-white">
+                <td>César</td>
+                <td>26</td>
+                <td>Colombia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

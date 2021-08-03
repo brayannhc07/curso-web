@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fechas en JS</title>
+  </head>
+  <body>
+    <p id="fecha"></p>
+    <script>
+      var fecha = new Date();
+      document.write(fecha);
+      function mostrarTiempo() {
+        var fecha = new Date();
+        var parrafo = document.getElementById("fecha");
+        parrafo.innerHTML = fecha;
+      }
+
+      var intervalo = setInterval(mostrarTiempo, 1000);
+
+      console.log(fecha.getHours());
+      console.log(fecha.getMinutes());
+      console.log(fecha.getSeconds());
+
+      var semana = [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+      ];
+
+      console.log(semana[fecha.getDay()]);
+      console.log(fecha.getMonth());
+      console.log(fecha.getFullYear());
+    </script>
+  </body>
+</html>

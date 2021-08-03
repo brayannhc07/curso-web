@@ -1,0 +1,10 @@
+Compilar sass
+Se usa ruby 
+Desde Promt de ruby
+gem install sass
+
+Para Compilar
+sass archivo.sass:archivo.css
+
+Para Auto Compilar
+sass --watch archivo.sass:archivo.css

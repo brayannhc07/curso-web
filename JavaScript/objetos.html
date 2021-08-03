@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos en JS</title>
+  </head>
+  <body>
+    <script>
+      // var nombre = 'Carlos';
+      // var edad = 20;
+      // var pais = "México";
+      // var arreglo = [1,2];
+
+      //   var carlos = {
+      //     nombre: "Carlos Arturo",
+      //     edad: 20,
+      //     pais: "México",
+      //     bio: function () {
+      //       return this.nombre + " tiene " + this.edad + " años";
+      //     },
+      //   };
+      //   document.write(carlos.bio());
+      // -------------------------------
+
+      function persona(nombre, edad, pais) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pais = pais;
+      }
+      var papa = new persona("Arturo", 35, "México");
+      document.write(papa.nombre);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>ScrollSpy</title>
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      .fm-nav a {
+        color: #fff;
+        padding: 15px;
+      }
+      .fm-nav a:hover,
+      .fm-nav .active {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .seccion {
+        margin-bottom: 1000px;
+      }
+      .seccion .columna {
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#fm-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="fm-nav" id="fm-nav">
+            <ul class="fm-nav nav fixed-top navbar-invserse bg-primary">
+              <li class="nav-item">
+                <a href="#seccion1" class="nav-link">Sección 1</a>
+              </li>
+              <li class="nav-item">
+                <a href="#seccion2" class="nav-link">Sección 2</a>
+              </li>
+              <li class="nav-item">
+                <a href="#seccion3" class="nav-link">Sección 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row seccion" id="seccion1">
+        <div class="col-12 columna">
+          <h2>Sección 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            dolorem necessitatibus esse minima quos amet, temporibus illum sed
+            iure suscipit in mollitia? Dignissimos sint minima facilis officia,
+            necessitatibus distinctio numquam.
+          </p>
+        </div>
+      </div>
+      <div class="row seccion" id="seccion2">
+        <div class="col-12 columna">
+          <h2>Sección 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            dolorem necessitatibus esse minima quos amet, temporibus illum sed
+            iure suscipit in mollitia? Dignissimos sint minima facilis officia,
+            necessitatibus distinctio numquam.
+          </p>
+        </div>
+      </div>
+      <div class="row seccion" id="seccion3">
+        <div class="col-12 columna">
+          <h2>Sección 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            dolorem necessitatibus esse minima quos amet, temporibus illum sed
+            iure suscipit in mollitia? Dignissimos sint minima facilis officia,
+            necessitatibus distinctio numquam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
